@@ -43,5 +43,5 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-aman-Quiz-App-PWA.sh
+aman-Quiz-App-PWA.surge.sh
 surge token 0ef6d72d174f66164b4b3d6e9ebce687
