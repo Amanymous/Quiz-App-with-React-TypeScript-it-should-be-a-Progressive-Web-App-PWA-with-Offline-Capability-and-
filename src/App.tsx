@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>PWA Quiz App</h1>
+      <h1>PWA Quiz App notification</h1>
     </div>
   );
 }
