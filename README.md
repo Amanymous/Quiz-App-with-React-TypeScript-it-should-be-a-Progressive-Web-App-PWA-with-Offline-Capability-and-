@@ -45,3 +45,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 aman-Quiz-App-PWA.surge.sh
 surge token 0ef6d72d174f66164b4b3d6e9ebce687
+
+firebase
+sudo npm install firebase
+npm install -g firebase-tools
+firebase login
+firebase init
+firebase deploy
+https://quiz-app-6efb5.web.app

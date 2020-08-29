@@ -6,6 +6,7 @@ import QuestionCard from './component/QuestionCard';
 import { QuestionsState, Difficulty } from './component/Api';
 // Styles
 import { GlobalStyle, Wrapper } from './App.styles';
+import { configureNotification } from './services/firebaseServices';
 
 export type AnswerObject = {
   question: string;
@@ -72,6 +73,7 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
+        <button onClick={configureNotification}>Configure Notification</button>
         <h1>TYPESCRIPT QUIZ APP</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className="start" onClick={startTrivia}>
