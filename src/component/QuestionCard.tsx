@@ -6,7 +6,7 @@ type Props = {
   callback: any;
   userAnswer: any;
   questionNr: number;
-  totalQuestion: number;
+  totalQuestions: number;
 };
 
 export const QuestionCard: React.FC<Props> = ({
@@ -15,18 +15,18 @@ export const QuestionCard: React.FC<Props> = ({
   callback,
   userAnswer,
   questionNr,
-  totalQuestion,
+  totalQuestions,
 }) => (
   <div>
     <p className="number">
-      Question: {questionNr} / {totalQuestion}
+      Question: {questionNr} / {totalQuestions}
     </p>
     <p dangerouslySetInnerHTML={{ __html: question }} />
     <div>
-      {answers.map((answers) => (
-        <div>
-          <button disabled={userAnswer} onClick={callback}>
-            <span dangerouslySetInnerHTML={{ __html: answers }} />
+      {answers.map((answer) => (
+        <div key={answer}>
+          <button disabled={userAnswer} value={answer} onClick={callback}>
+            <span dangerouslySetInnerHTML={{ __html: answer }} />
           </button>
         </div>
       ))}
